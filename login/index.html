@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+    rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="image/ENSAM.png">
+                    <h2><span class="text-muted">EN</span><span class="danger">SAM</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">account_circle</span>
+                    <h3>Profile</h3>
+                </a>
+                
+                <a href="#">
+                    <span class="material-icons-sharp">manage_accounts</span>                       
+                    <h3>Settings</h3>
+                </a>
+                <a href="">
+                    <span class="material-icons-sharp">add</span>
+                    <h3>Add</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+
+        <main class="main-container">
+            <div class="insights">
+                <div class="Professor">
+                    <span class="material-icons-sharp">person</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Professor Overview</h3>
+                            <h4>Total Professors: </h4>
+                            <h4>Active Professors: 45</h4>    
+                            <h4>Departments: 5</h4>   
+                        </div>
+            
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                    <!-----------END OF SALES------------------------>
+                <div class="Course">
+                    <span class="material-icons-sharp">school</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Course Management</h3>
+                            <h4>Courses Taught: 120 </h4>
+                            <h4>Enrollments: 2500</h4>    
+                            <h4>Subjects: 8</h4>   
+                        </div>
+                    </div>
+                            <small class="text-muted">Last 24 Hours</small>
+                </div>
+                        <!-----------END OF SALES------------------------>
+            </div>
+            <div class="list-vac">
+                <h2>Liste des vacataires </h2>
+                <!-- Search block -->
+                <div class="search-block">
+                    <input type="text" id="search-input" placeholder="Search by name">
+                    <button id="search-button">Search</button>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <!-- Table header cells -->
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Table rows -->
+                        <tr>
+                            <td>Data 1</td>
+                            <td>Data 1</td>
+                            <td class="primary">Details</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Data 2</td>
+                            <td>Data 1</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Data 1</td>
+                            <td>Data 1</td>
+                            <td class="primary">Details</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Data 2</td>
+                            <td>Data 1</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">show all</a>
+            </div>
+        </main>
+        <!---THE END  OF MAIN------>
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-icons-sharp active"> light_mode</span>
+                    <span class="material-icons-sharp"> dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey <b>Massimo</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="./image/ENSAM.png" >
+                    </div>
+                </div>
+            </div>
+            <!--END OF TOP-->
+
+            <div class="Active-vac">
+                <h2>Active Vacataires</h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./image/ENSAM.png" >
+                        </div>
+                        <div class="message">
+                            <p><b>saad rachid</b> was active </p>
+                            <small class="text-muted">2 Minutes Ago</small>
+                        </div>
+                    </div>
+
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./image/ENSAM.png" >
+                        </div>
+                        <div class="message">
+                            <p><b>saad rachid</b> was active </p>
+                            <small class="text-muted">2 Minutes Ago</small>
+                        </div>
+                    </div>
+
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./image/ENSAM.png" >
+                        </div>
+                        <div class="message">
+                            <p><b>saad rachid</b> was active </p>
+                            <small class="text-muted">2 Minutes Ago</small>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+  
+</html>
