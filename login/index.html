@@ -17,7 +17,7 @@
             <div class="top">
                 <div class="logo">
                     <img src="image/ENSAM.png">
-                    <h2><span class="text-muted">EN</span><span class="danger">SAM</span></h2>
+                    
                 </div>
                 <div class="close" id="close-btn">
                     <span class="material-icons-sharp">
@@ -30,16 +30,11 @@
                     <span class="material-icons-sharp">grid_view</span>
                     <h3>Dashboard</h3>
                 </a>
-                <a href="#">
-                    <span class="material-icons-sharp">account_circle</span>
+                <a href="Profile.html">
+                    <span class="material-icons-sharp">person</span>
                     <h3>Profile</h3>
                 </a>
-                
-                <a href="#">
-                    <span class="material-icons-sharp">manage_accounts</span>                       
-                    <h3>Settings</h3>
-                </a>
-                <a href="">
+                <a href="Add.html">
                     <span class="material-icons-sharp">add</span>
                     <h3>Add</h3>
                 </a>
@@ -85,44 +80,114 @@
                 <!-- Search block -->
                 <div class="search-block">
                     <input type="text" id="search-input" placeholder="Search by name">
-                    <button id="search-button">Search</button>
+                    <button id="search-button"><span style="font-size: small;" class="material-icons-sharp">
+                        search
+                    </span>
+                    Search</button>
                 </div>
-                <table>
-                    <thead>
-                        <tr>
-                            <!-- Table header cells -->
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th></th>
-                        </tr>
-                    </thead>
+                <table id="vacataire-table">
+                        <thead>
+                            <tr>
+                                <!-- Table header cells -->
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Departement</th>
+                                <th>
+                                    
+                                </th>
+                            </tr>
+                        </thead>
+                   
                     <tbody>
                         <!-- Table rows -->
                         <tr>
-                            <td>Data 1</td>
-                            <td>Data 1</td>
-                            <td class="primary">Details</td>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>Mathematics</td>
+                            <td class="primary"><a href="/login/vacataire-details.html?firstName=John&lastName=Doe&birthday=1990-05-15&startJobDate=2023-01-01&hoursWorked=40"><span class="material-icons-sharp"> visibility</span>voir</a></td>
                             
                         </tr>
                         <tr>
                             <td>Data 2</td>
                             <td>Data 1</td>
-                            <td class="primary">Details</td>
+                            <td>mecanique</td>
+                            <td class="primary"><a href="#"><span class="material-icons-sharp">
+                                visibility
+                                </span>voir</a></td>
                         </tr>
                         <tr>
                             <td>Data 1</td>
                             <td>Data 1</td>
-                            <td class="primary">Details</td>
+                            <td>CS</td>
+                            <td class="primary"><a href="#"><span class="material-icons-sharp">
+                                visibility
+                                </span>voir</a></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Data 1</td>
+                            <td>Data 1</td>
+                            <td></td>
+                            <td class="primary"><a href="#"><span class="material-icons-sharp">
+                                visibility
+                                </span>voir</a></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Data 1</td>
+                            <td>Data 1</td>
+                            <td></td>
+                            <td class="primary"><a href="#"><span class="material-icons-sharp">
+                                visibility
+                                </span>voir</a></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Data 1</td>
+                            <td>Data 1</td>
+                            <td></td>
+                            <td class="primary"><a href="#"><span class="material-icons-sharp">
+                                visibility
+                                </span>voir</a></td>
                             
                         </tr>
                         <tr>
                             <td>Data 2</td>
                             <td>Data 1</td>
-                            <td class="primary">Details</td>
+                            <td></td>
+                            <td class="primary"><a href="#"><span class="material-icons-sharp">
+                                visibility
+                                </span>voir</a></td>
                         </tr>
+                        <tr>
+                            <td>Data 2</td>
+                            <td>Data 1</td>
+                            <td></td>
+                            <td class="primary"><a href="#"><span class="material-icons-sharp">
+                                visibility
+                                </span>voir</a></td>
+                        </tr>
+                        <tr>
+                            <td>Data 2</td>
+                            <td>Data 1</td>
+                            <td></td>
+                            <td class="primary"><a href="#"><span class="material-icons-sharp">
+                                visibility
+                                </span>voir</a></td>
+                        </tr>
+                        <tr>
+                            <td>Data 2</td>
+                            <td>Data 1</td>
+                            <td></td>
+                            <td class="primary"><a href="#"><span class="material-icons-sharp">
+                                visibility
+                                </span>voir</a></td>
+                        </tr>
+
+                        
                     </tbody>
                 </table>
-                <a href="#">show all</a>
+               <!--<a href="#">show all</a> --->
             </div>
         </main>
         <!---THE END  OF MAIN------>
@@ -180,11 +245,21 @@
                             <small class="text-muted">2 Minutes Ago</small>
                         </div>
                     </div>
-
+                    
+                </div>
+                <div class="add-profile">
+                    <a href="Add.html">
+                        <div>
+                            <span class="material-icons-sharp">add</span>
+                            <h3>Add Profile</h3>
+                        </div>
+                    </a>
+                    
                 </div>
             </div>
         </div>
     </div>
   </body>
+  <script src="/login/js/main.js"> </script>
   
 </html>
