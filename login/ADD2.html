@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="add.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+    <title>Add vacataire</title>
+
+</head>
+<body>
+    <div class="container">
+        <header> Add vacataire </header>
+
+        <form action="">
+            <div class="form-first">
+                <div class="details">
+                    <span class="title"> Personal details </span>
+                    <div class="fields">
+
+                        <div class="input-field">
+                            <label for="">Remmuneration</label>
+                            <input type="text" placeholder="Enter The CIN" >
+                        </div>
+
+                        <div class="input-field">
+                            <label for="">RIP</label>
+                            <input type="text" placeholder="Enter Email address" >
+                        </div>
+
+                        <div class="input-field">
+                            <label for="">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="+212"  pattern="\+212\d{9}" title="Please enter a valid phone number starting with '+212'">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="">Fonction</label>
+                            <select id="fonction" name="Fonction">
+                                <option value="" disabled selected>Choose the Fonction</option>
+                                <option value="F">ingenieur</option>
+                                <option value="F">Ing en chef</option>
+                                <option value="F">prof assistant</option>
+                                <option value="F">PROF_ABILITE</option>
+                                <option value="F">DOCTORANT</option>
+                                <option value="F">PES</option>
+                                <option value="F">PROF AGREGE</option>
+                              </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="departement">Departement</label>
+                            <select id="departement" name="departement">
+                              <option value="" disabled selected>Choose the departement</option>
+                              <option value="mathematics">Mathematics</option>
+                              <option value="computer_science">Computer Science</option>
+                              <option value="biology">Biology</option>
+                              <!-- Add more options as needed -->
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="">Finish Date</label>
+                            <input type="date">
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="details">
+                    <span class="title"> Module </span>
+                    <div class="btn-right">
+                        <button id="addFieldsBtn" onclick="addFields()"><span class="material-icons-sharp">
+                            add
+                            </span></button>
+                    </div>
+                    
+                    <div class="btn-right">
+                        <button id="deleteFieldBtn" onclick="deleteField()"><span class="material-icons-sharp">
+                            remove
+                            </span></button>
+                    </div>
+                    
+                    <div id="fieldsContainer">
+                        <div class="fields">
+
+                            <div class="input-field">
+                                <label for="">Element de module</label>
+                                <input type="text" placeholder="name of The EM">
+                            </div>
+    
+                            <div class="input-field">
+                                <label for="departement">Filière</label>
+                                <select id="departement" name="departement">
+                                  <option value="" disabled selected>Choose the filière</option>
+                                  <option value="mathematics">Mathematics</option>
+                                  <option value="computer_science">Computer Science</option>
+                                  <option value="biology">Biology</option>
+                                  <!-- Add more options as needed -->
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <center>
+                    <button class="submitBtn">
+                        <span class="btn">ADD</span>
+                        <i style="margin-left: 1rem;" class="uil uil-navigator"></i>
+                    </button>
+                </center>
+
+            </div>
+            
+        </form>
+    </div>
+    <!--
+
+  
+    <script>
+        function addFields() {
+          var fieldsContainer = document.getElementById('fieldsContainer');
+      
+          var newInputField1 = document.createElement('div');
+          newInputField1.className = 'input-field';
+          newInputField1.innerHTML = `
+            <label for="">Element de module</label>
+            <input type="text" placeholder="name of The EM">
+          `;
+      
+          var newInputField2 = document.createElement('div');
+          newInputField2.className = 'input-field';
+          newInputField2.innerHTML = `
+            <label for="departement">Filière</label>
+            <select id="departement" name="departement">
+              <option value="" disabled selected>Choose the filière</option>
+              <option value="mathematics">Mathematics</option>
+              <option value="computer_science">Computer Science</option>
+              <option value="biology">Biology</option>
+             
+            </select>  
+          `;
+      
+          fieldsContainer.appendChild(newInputField1);
+          fieldsContainer.appendChild(newInputField2);
+      
+          // Store the added fields in local storage
+          var savedFields = localStorage.getItem('savedFields');
+          if (savedFields) {
+            savedFields = JSON.parse(savedFields);
+          } else {
+            savedFields = [];
+          }
+          savedFields.push(newInputField1.innerHTML);
+          savedFields.push(newInputField2.innerHTML);
+          localStorage.setItem('savedFields', JSON.stringify(savedFields));
+        }
+      
+        function deleteField() {
+          var fieldsContainer = document.getElementById('fieldsContainer');
+          var fields = fieldsContainer.getElementsByClassName('input-field');
+          var lastField = fields[fields.length - 1];
+          if (lastField) {
+            fieldsContainer.removeChild(lastField);
+      
+            // Remove the corresponding field from local storage
+            var savedFields = localStorage.getItem('savedFields');
+            if (savedFields) {
+              savedFields = JSON.parse(savedFields);
+              savedFields.pop(); // Remove last saved field
+              savedFields.pop(); // Remove corresponding select field
+              localStorage.setItem('savedFields', JSON.stringify(savedFields));
+            }
+          }
+        }
+      
+        // Retrieve and add saved fields on page load
+        document.addEventListener('DOMContentLoaded', function() {
+          var savedFields = localStorage.getItem('savedFields');
+          if (savedFields) {
+            savedFields = JSON.parse(savedFields);
+            var fieldsContainer = document.getElementById('fieldsContainer');
+            for (var i = 0; i < savedFields.length; i++) {
+              var newField = document.createElement('div');
+              newField.className = 'input-field';
+              newField.innerHTML = savedFields[i];
+              fieldsContainer.appendChild(newField);
+            }
+          }
+        });
+      </script>  -->
+</body>
+</html>
