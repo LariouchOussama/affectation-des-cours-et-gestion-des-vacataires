@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Courses</title>
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+    rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="image/ENSAM.png">
+                    
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="index.html">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="Profile.html">
+                    <span class="material-icons-sharp">person</span>
+                    <h3>Administration</h3>
+                </a>
+
+                <a href="#"  class="active">
+                    <span class="material-icons-sharp">book</span>
+                    <h3>Courses</h3>
+                </a>
+
+                <a href="Add.html"> 
+                    <span class="material-icons-sharp">add</span>
+                    <h3>Add</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+
+        <main class="main-container">
+           
+            <div class="list-vac">
+                <h2>Liste des vacataires </h2>
+                <!-- Search block -->
+                <div class="search-block">
+                    <input type="search" id="search-input" placeholder="Search by name">
+                    <button id="search-button"><span style="font-size: small;" class="material-icons-sharp">
+                        search
+                    </span>
+                    Search</button>
+                </div>
+                <table id="vacataire-table">
+                        <thead>
+                            <tr>
+                                <!-- Table header cells -->
+                                <th>Promotion</th>
+                                <th>Element De Module</th>
+                                <th>Fichie de note(Empty)</th>
+                                <th>Fichie de note</th>
+                            </tr>
+                        </thead>
+                   
+                    <tbody>
+                        <!-- Table rows -->
+                        <tr>
+                            <td>1er annee</td>
+                            <td>Mathematics</td>
+                            <td><a href="#"><span class="material-icons-sharp"> file_upload</span>Upload</a></td>
+                            <td><a href="#"><span class="material-icons-sharp"> file_download</span>Download</a></td>
+                        </tr>     
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <!---THE END  OF MAIN------>
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+                
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey <b>Massimo</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <a href="Profile.html"><img src="./image/ENSAM.png" ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
