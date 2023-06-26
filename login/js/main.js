@@ -21,3 +21,6 @@ searchButton.addEventListener('click', () => {
         }
     }
 });
+document.getElementById('menu-btn').addEventListener('click', function() {
+    document.querySelector('.container').classList.toggle('menu-open');
+});
