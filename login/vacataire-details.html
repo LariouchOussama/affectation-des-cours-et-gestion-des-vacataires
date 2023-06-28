@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="details.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .statistics {
+            background-color: #f1f1f1;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .statistics h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
+    <title> Vacataire Details</title>
+</head>
+<body>
+    <div class="container">
+            <div class="profile">
+                <aside>
+                    <div class="top">
+                        <div class="logo">
+                            <img src="./image/ENSAM.png" alt="Logo ENSAM">
+                        </div>
+                        <div class="close" id="close-btn">
+                            <span class="material-icons-sharp">
+                                close
+                            </span>
+                        </div>
+                    </div>
+                    <div class="sidebar">
+                        <a href="index.html " class="active" >
+                            <span class="material-icons-sharp">grid_view</span>
+                            <h3>Dashboard</h3>
+                        </a> 
+                        <a href="Profile.html" >
+                            <span class="material-icons-sharp">account_circle</span>
+                            <h3>Administration</h3>
+                        </a>
+                        <a href="Courses.html">
+                            <span class="material-icons-sharp">book</span>
+                            <h3>Courses</h3>
+                        </a>
+        
+                        <a href="Add.html" >
+                            <span class="material-icons-sharp">add</span>
+                            <h3>Add</h3>
+                        </a>
+                        <a href="#">
+                            <span class="material-icons-sharp">logout</span>
+                            <h3>Logout</h3>
+                        </a>
+                    </div>
+                </aside>
+            </div>
+            <div>
+                <main class="main-container">  
+                    <div class="insights">
+                        <div class="Professor">
+                            <center><span class="material-icons-sharp">person</span></center>
+                            <div class="middle">
+                                <div class="left">
+                                    <h3>Information personnel</h3>
+                                    <h4 class="text-muted">Nom: </h4>Saad
+                                    <h4 class="text-muted">Prenom: </h4>  Rachid  
+                                    <h4 class="text-muted">RIP: </h4>100XXXXXXXXXXXXXXXXXX
+                                    <h4 class="text-muted">CIN: </h4>  Qr4556 
+                                    <h4 class="text-muted">Tel: </h4>  +212700516100 
+                                    <h4 class="text-muted">Email: </h4>  lariouchoussama@gmail.com 
+                                </div>
+                            </div>
+                    </div> 
+                    <div class="list-vac">
+                        <h2>Liste des EM </h2>
+                        <!-- Search block 
+                        <div class="search-block">
+                            <input type="search" id="search-input" placeholder="Search by name">
+                            <button id="search-button" style="height: 2.1rem;">
+                                <span style="font-size: x-small; width: 1%; height: 1%;" class="material-icons-sharp">
+                                    search
+                                </span>
+                                Search
+                            </button>
+                        </div>-->
+                        <table id="vacataire-table">
+                                <thead>
+                                    <tr>
+                                        <!-- Table header cells -->
+                                        <th>Promotion</th>
+                                        <th>Element De Module</th>
+                                        <th>filiere </th>
+                                        <th>N-heures</tH> 
+                                    </tr>
+
+                                </thead>
+                        
+                            <tbody>
+                                <!-- Table rows -->
+                                    <tr>
+                                        <td>1er annee</td>
+                                        <td>Mathematics</td>
+                                        <td>INDIA</td>
+                                        <td>30</td>
+
+                                    </tr>
+                                    <tr>
+                                    <td>2eme annee</td>
+                                    <td>CS</td>
+                                    <td>GITN</td>
+                                    <td>30</td>
+                                    
+
+                                </tr>
+                                <tr>
+                                    <td>1er annee</td>
+                                    <td>Mathematics</td>
+                                    <td>EEIN</td>
+                                    <td>30</td>
+
+                                </tr>
+                                <tr>
+                                    <td>3er annee</td>
+                                    <td>AI</td>
+                                    <td>INDIA</td>
+                                    <td>24</td>
+
+                                </tr>     
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--
+                        <div class="chart-title" >
+                        <h2>Abs statistics</h2>
+                        <div class="chart-container">
+                            <canvas class="my-chart"></canvas>
+                        </div>
+                        <div class="details">
+                            <ul>
+                                <li>ToTal D'heures: <span class="percentage">80%</span></li>
+                                <li>ToTal D'absence Justfie: <span class="percentage">10%</span></li>
+                                <li>ToTAl D'absence Non Justfie<span class="percentage">10%</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    -->
+                    
+                </main>
+                
+            </div>
+            <div class="right">
+                <div class="top">
+                    <button id="menu-btn">
+                        <span class="material-icons-sharp">menu</span>
+                    </button>
+                    
+                    <div class="profile">
+                        <div class="info">
+                            <p>Hey <b>Massimo</b></p>
+                            <small class="text-muted">Admin</small>
+                        </div>
+                        <div class="profile-photo">
+                            <a href="Profile.html"><img src="./image/ENSAM.png" ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="statistics">
+                    <div class="left">
+                        <h2>Absence Non Justfie</h2>
+                        <h4 class="text-muted">Total d'Absence Non Justfie: </h4>8
+                    </div>
+                    
+                </div>
+
+                <div class="statistics">
+                    <div class="left">
+                        <h2>Absence Justfie</h2>
+                        <h4 class="text-muted">Total d'Absence Justfie: </h4>10
+                    </div>
+                    
+                </div>
+            </div>    
+    </div>
+    
+</body>
+</html>

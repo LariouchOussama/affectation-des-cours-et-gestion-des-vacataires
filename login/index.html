@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+    rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="image/ENSAM.png">
+                    
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="Profile.html">
+                    <span class="material-icons-sharp">person</span>
+                    <h3>Administration</h3>
+                </a>
+
+                <a href="Courses.html">
+                    <span class="material-icons-sharp">book</span>
+                    <h3>Courses</h3>
+                </a>
+
+                <a href="Add.html"> 
+                    <span class="material-icons-sharp">add</span>
+                    <h3>Add</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+
+        <main class="main-container">
+            <!--
+                <div class="search">
+                <span  class="material-icons-sharp" > search </span>
+                <input type="search" placeholder="search here">
+            </div>
+            -->
+            
+            <div class="insights">
+                <div class="Professor">
+                    <span class="material-icons-sharp">person</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Vacataires Overview</h3>
+                            <h4>Total vacataires:100 </h4>
+                            <h4>Active vacataires: 45</h4>       
+                        </div>
+            
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                    <!-----------END OF SALES------------------------>
+                <div class="Course">
+                    <span class="material-icons-sharp">school</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Course Management</h3>
+                            <h4>Courses Taught: 120 </h4>   
+                            <h4>Departments: 5</h4>
+                            <h4>Subjects: 8</h4>   
+                        </div>
+                    </div>
+                            <small class="text-muted">Last 24 Hours</small>
+                </div>
+                        <!-----------END OF SALES------------------------>
+            </div>
+            <div class="list-vac">
+                <h2>Liste des vacataires </h2>
+                <!-- Search block -->
+                <div class="search-block">
+                    <input type="search" id="search-input" placeholder="Search by name">
+                    <button id="search-button"><span style="font-size: small;" class="material-icons-sharp">
+                        search
+                    </span>
+                    </button>
+                </div>
+                <table id="vacataire-table">
+                        <thead>
+                            <tr>
+                                <!-- Table header cells -->
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Departement</th>
+                                <th>
+                                    
+                                </th>
+                            </tr>
+                        </thead>
+                   
+                    <tbody>
+                        <!-- Table rows -->
+                        <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>Mathematics</td>
+                            <td class="primary"><a href="/login/vacataire-details.html?firstName=John&lastName=Doe&birthday=1990-05-15&startJobDate=2023-01-01&hoursWorked=40"><span class="material-icons-sharp"> visibility</span>voir</a></td>
+                            
+                        </tr>     
+                    </tbody>
+                </table>
+               <!--<a href="#">show all</a> --->
+            </div>
+        </main>
+        <!---THE END  OF MAIN------>
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+                
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey <b>Massimo</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <a href="Profile.html"><img src="./image/ENSAM.png" ></a>
+                    </div>
+                </div>
+            </div>
+            <!--END OF TOP-->
+
+            <div class="Active-vac">
+                <h2>Vacataires Abs</h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./image/ENSAM.png" >
+                        </div>
+                        <div class="message">
+                            <p><b>saad rachid</b> est abs </p>
+                            <small class="text-muted">2 Minutes Ago</small>
+                        </div>
+                    </div>
+
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./image/ENSAM.png" >
+                        </div>
+                        <div class="message">
+                            <p><b>saad rachid</b> was active </p>
+                            <small class="text-muted">2 Minutes Ago</small>
+                        </div>
+                    </div>
+
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./image/ENSAM.png" >
+                        </div>
+                        <div class="message">
+                            <p><b>saad rachid</b> was active </p>
+                            <small class="text-muted">2 Minutes Ago</small>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                
+            </div>
+
+            <div class="Active-vac">
+                <h2>Vacataires Presente </h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./image/ENSAM.png" >
+                        </div>
+                        <div class="message">
+                            <p><b>saad rachid</b> was active </p>
+                            <small class="text-muted">2 Minutes Ago</small>
+                        </div>
+                    </div>
+
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./image/ENSAM.png" >
+                        </div>
+                        <div class="message">
+                            <p><b>saad rachid</b> was active </p>
+                            <small class="text-muted">2 Minutes Ago</small>
+                        </div>
+                    </div>
+
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./image/ENSAM.png" >
+                        </div>
+                        <div class="message">
+                            <p><b>saad rachid</b> was active </p>
+                            <small class="text-muted">2 Minutes Ago</small>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <form action="">
+                
+            </form>
+            <label for="file-upload" class="upload-button">Upload File</label>
+             
+            <input id="file-upload" class="upload-input" type="file" />
+
+            <!-- Optional: Display the selected file name -->
+            <div id="file-name"></div>
+       </div>
+    </div>
+    <script src="/login/js/main.js"> </script>
+    <script>
+        // Get the file input element
+        var fileInput = document.getElementById('file-upload');
+    
+        // Add an event listener to handle file selection
+        fileInput.addEventListener('change', function(event) {
+          // Get the selected file name
+          var fileName = event.target.files[0].name;
+    
+          // Display the file name
+          var fileNameElement = document.getElementById('file-name');
+          fileNameElement.textContent = 'Selected file: ' + fileName;
+        });
+    </script>
+  </body>
+  
+ 
+  
+</html>

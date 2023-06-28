@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="add.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Add vacataire</title>
+</head>
+<body>
+    <div class="container">
+            <div class="profile">
+                <aside>
+                    <div class="top">
+                        <div class="logo">
+                            <img src="./image/ENSAM.png" alt="Logo ENSAM">
+                        </div>
+                        <div class="close" id="close-btn">
+                            <span class="material-icons-sharp">
+                                close
+                            </span>
+                        </div>
+                    </div>
+                    <div class="sidebar">
+                        <a href="index.html" >
+                            <span class="material-icons-sharp">grid_view</span>
+                            <h3>Dashboard</h3>
+                        </a> 
+                        <a href="Profile.html" >
+                            <span class="material-icons-sharp">account_circle</span>
+                            <h3>Administration</h3>
+                        </a>
+                        <a href="Courses.html">
+                            <span class="material-icons-sharp">book</span>
+                            <h3>Courses</h3>
+                        </a>
+        
+                        <a href="#" class="active">
+                            <span class="material-icons-sharp">add</span>
+                            <h3>Add</h3>
+                        </a>
+                        <a href="#">
+                            <span class="material-icons-sharp">logout</span>
+                            <h3>Logout</h3>
+                        </a>
+                    </div>
+                </aside>
+            </div>
+            <div>
+                <main class="main-container">    
+                    <form action="ADD2.html">
+                        <div class="form-first">
+                            <div class="details">
+                                <span class="title"> Ajouter vacataire </span>
+                                <div class="fields">
+                                    <div class="input-field">
+                                        <label for="">Full Name</label>
+                                        <input type="text" placeholder="Enter The Name"  name="">
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label for="">CIN</label>
+                                        <input type="text" placeholder="Enter The CIN"  name="">
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label for="">Email</label>
+                                        <input type="text" placeholder="Enter Email address"  name="">
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label for="">Password</label>
+                                        <input  name="" type="password" placeholder="Enter the Password" placeholder="Enter the Password" pattern=".{8,}" title="Password must be at least 8 characters long" >
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label for=""> Confirm Password</label>
+                                        <input  name="" type="password" placeholder="confirm the Password" placeholder="Enter the Password" pattern=".{8,}" title="Password must be at least 8 characters long" >
+                                    </div>
+            
+                                
+                            </div>
+                            <center>
+                                <button class="submitBtn">
+                                    <span class="btn">Suivant</span>
+                                    <i style="margin-left: 1rem;" class="uil uil-navigator"></i>
+                                </button>
+                            </center>
+                                
+                          
+            
+                        </div>
+                        
+                    </form>
+                </main>
+                
+            </div>
+            <div class="right">
+                <div class="top">
+                    <button id="menu-btn">
+                        <span class="material-icons-sharp">menu</span>
+                    </button>
+                    
+                    <div class="profile">
+                        <div class="info">
+                            <p>Hey <b>Massimo</b></p>
+                            <small class="text-muted">Admin</small>
+                        </div>
+                        <div class="profile-photo">
+                            <a href="Profile.html"><img src="./image/ENSAM.png" ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+    </div>
+    
+</body>
+</html>
